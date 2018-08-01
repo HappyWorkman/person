@@ -1,0 +1,20 @@
+{
+  "code": "0",
+  "msg": "success",
+  "data": {
+    "statisticalDimensionDatas": [
+      "新成交客户付款金额",
+      "老成交客户付款金额"
+    ],
+    "echartsSingleSeriesDatas": [
+      {
+        "name": "新成交客户付款金额",
+        "value": "123123.12"
+      },
+      {
+        "name": "老成交客户付款金额",
+        "value": "1233434.23"
+      }
+    ]
+  }
+}

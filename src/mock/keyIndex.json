@@ -1,0 +1,14 @@
+{
+  "code": "0",
+  "msg": "success",
+  "data": {
+    "visitorCount": 99999,
+    "comparevisitorCount": "10.11%",
+    "productSaleCount": 99999,
+    "compareproductSaleCount": "-10.11%",
+    "orderCount": 99999,
+    "compareorderCount": "10.11%",
+    "orderTradeAmount": 99999,
+    "compareorderTradeAmount": "10.11%"
+  }
+}

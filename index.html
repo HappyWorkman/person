@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>KOL-ADMIN</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <script>
+    ; (function (designWidth, maxWidth) {
+      var doc = document,
+        win = window;
+      var docEl = doc.documentElement;
+      var tid;
+      var rootItem, rootStyle;
+
+      function refreshRem() {
+        var width = docEl.getBoundingClientRect().width;
+        if (!maxWidth) {
+          maxWidth = 540;
+        };
+        if (width > maxWidth) {
+          width = maxWidth;
+        }
+        //与淘宝做法不同，直接采用简单的rem换算方法1rem=100px
+        var rem = width * 100 / designWidth;
+        //兼容UC开始
+        rootStyle = "html{font-size:" + rem + 'px !important}';
+        rootItem = document.getElementById('rootsize') || document.createElement("style");
+        if (!document.getElementById('rootsize')) {
+          document.getElementsByTagName("head")[0].appendChild(rootItem);
+          rootItem.id = 'rootsize';
+        }
+        if (rootItem.styleSheet) {
+          rootItem.styleSheet.disabled || (rootItem.styleSheet.cssText = rootStyle)
+        } else {
+          try { rootItem.innerHTML = rootStyle } catch (f) { rootItem.innerText = rootStyle }
+        }
+        //兼容UC结束
+        docEl.style.fontSize = rem + "px";
+      };
+      refreshRem();
+
+      win.addEventListener("resize", function () {
+        clearTimeout(tid); //防止执行两次
+        tid = setTimeout(refreshRem, 300);
+      }, false);
+
+      win.addEventListener("pageshow", function (e) {
+        if (e.persisted) { // 浏览器后退的时候重新计算
+          clearTimeout(tid);
+          tid = setTimeout(refreshRem, 300);
+        }
+      }, false);
+
+      if (doc.readyState === "complete") {
+        doc.body.style.fontSize = "16px";
+      } else {
+        doc.addEventListener("DOMContentLoaded", function (e) {
+          doc.body.style.fontSize = "16px";
+        }, false);
+      }
+    })(1280, 1920);
+
+
+  </script>
+  <style>
+    .broswerTip {
+      position: fixed;
+      display: none;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 30px;
+      line-height: 30px;
+      font-size: 14px;
+      color: rgba(51, 51, 51, 1);
+      text-align: center;
+      background: rgba(255, 218, 13, 1);
+      z-index: 99999;
+    }
+
+    .broswerTip a {
+      color: #8814ff;
+    }
+
+    .broswerTip .btn-close {
+      position: absolute;
+      top: 0;
+      right: 50px;
+      z-index: 10000;
+      padding: 0 15px;
+      height: 100%;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="app">
+  </div>
+  <div id="broswerTip" class="broswerTip">非常抱歉，您当前浏览器无法获得更好的体验，建议使用
+    <a href="http://www.google.cn/intl/zh-CN/chrome/">谷歌</a> 或
+    <a href="http://www.firefox.com.cn/">火狐</a> 浏览器
+    <div id="bT-btn-close" class="btn-close">x</div>
+  </div>
+  <!-- built files will be auto injected -->
+  <script>
+    function getBroswer() {
+      var Sys = {};
+      var ua = navigator.userAgent.toLowerCase();
+      var s;
+      (s = ua.match(/edge\/([\d.]+)/))
+        ? (Sys.edge = s[1])
+        : (s = ua.match(/rv:([\d.]+)\) like gecko/))
+          ? (Sys.ie = s[1])
+          : (s = ua.match(/msie ([\d.]+)/))
+            ? (Sys.ie = s[1])
+            : (s = ua.match(/firefox\/([\d.]+)/))
+              ? (Sys.firefox = s[1])
+              : (s = ua.match(/chrome\/([\d.]+)/))
+                ? (Sys.chrome = s[1])
+                : (s = ua.match(/opera.([\d.]+)/))
+                  ? (Sys.opera = s[1])
+                  : (s = ua.match(/version\/([\d.]+).*safari/))
+                    ? (Sys.safari = s[1])
+                    : 0;
+
+      if (Sys.edge) return { broswer: 'Edge', version: Sys.edge };
+      if (Sys.ie) return { broswer: 'IE', version: Sys.ie };
+      if (Sys.firefox) return { broswer: 'Firefox', version: Sys.firefox };
+      if (Sys.chrome) return { broswer: 'Chrome', version: Sys.chrome };
+      if (Sys.opera) return { broswer: 'Opera', version: Sys.opera };
+      if (Sys.safari) return { broswer: 'Safari', version: Sys.safari };
+
+      return { broswer: '', version: '0' };
+    }
+    var abc = getBroswer();
+    if (abc.broswer == 'IE') {
+      document.getElementById('broswerTip').style.display = "block";
+    } else {
+      document.getElementById('broswerTip').style.display = "none";
+    }
+
+    document.getElementById('bT-btn-close').addEventListener('click', function () {
+      document.getElementById('broswerTip').style.display = "none";
+    })
+  </script>
+</body>
+
+</html>

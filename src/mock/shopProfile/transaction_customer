@@ -1,0 +1,12 @@
+{
+  "code": "0",
+  "msg": "success",
+  "data": {
+    "newMember": 112,
+    "upRate": 0,
+    "rate": 0,
+    "price": 345,
+    "member": 155,
+    "newPrice": 82
+  }
+}

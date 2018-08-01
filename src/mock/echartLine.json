@@ -1,0 +1,104 @@
+{
+  "code": "0",
+  "msg": "success",
+  "data": {
+    "xAxisDatas": [
+      "2018-01-20",
+      "2018-01-21"
+    ],
+    "statisticalDimensionDatas": [
+      "时尚女装",
+      "精品男装",
+      "精致内衣",
+      "服饰配件",
+      "时尚女鞋",
+      "流行男鞋",
+      "潮流女包",
+      "精品男包",
+      "童装童鞋",
+      "时尚饰品"
+    ],
+    "echartsMultiSeriesDatas": [
+      {
+        "name": "时尚女装",
+        "type": "line",
+        "data": [
+          1,
+          3
+        ]
+      },
+      {
+        "name": "精品男装",
+        "type": "line",
+        "data": [
+          2,
+          3
+        ]
+      },
+      {
+        "name": "精致内衣",
+        "type": "line",
+        "data": [
+          3,
+          3
+        ]
+      },
+      {
+        "name": "服饰配件",
+        "type": "line",
+        "data": [
+          4,
+          3
+        ]
+      },
+      {
+        "name": "时尚女鞋",
+        "type": "line",
+        "data": [
+          3,
+          6
+        ]
+      },
+      {
+        "name": "流行男鞋",
+        "type": "line",
+        "data": [
+          4,
+          9
+        ]
+      },
+      {
+        "name": "潮流女包",
+        "type": "line",
+        "data": [
+          7,
+          2
+        ]
+      },
+      {
+        "name": "精品男包",
+        "type": "line",
+        "data": [
+          8,
+          4
+        ]
+      },
+      {
+        "name": "童装童鞋",
+        "type": "line",
+        "data": [
+          2,
+          5
+        ]
+      },
+      {
+        "name": "时尚饰品",
+        "type": "line",
+        "data": [
+          3,
+          7
+        ]
+      }
+    ]
+  }
+}

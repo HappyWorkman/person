@@ -1,0 +1,85 @@
+{
+  "code": "0",
+  "msg": "success",
+  "data": {
+      "id": "9c0ec723-6ecb-45bc-a098-e1a008a4babc",
+      "sn": "201801298383",
+      "createDate": 1517214369000,
+      "amount": 2826.9,
+      "freight": 0,
+      "incomeTotal": 97.2,
+      "consignee": "frank锋",
+      "phone": "18621809517",
+      "status": "部分发货",
+      "paymentSn": "201801298485",
+      "payDate": 1517214406000,
+      "paymentPluginName": "",
+      "amountPaid": 2610,
+      "orderDtoList": [
+          {
+              "status": "部分发货",
+              "isExpired": null,
+              "expireDate": null,
+              "isReviewed": true,
+              "isConfirmReceipt": false,
+              "shippingDtoList": [{
+                  "id": "8167c8cd-a204-4d21-af3b-556e8e8273fc",
+                  "sn": "201801292929",
+                  "deliveryCorp": "顺丰速递",
+                  "trackingNo": "123456789",
+                  "createDate": 1517215661000,
+                  "receiptDate": null,
+                  "status": "notConfirmReceipt",
+                  "statusShow": "待收货",
+                  "isReviewed": false,
+                  "shippingItemDtos": [{
+                      "id": "e466e2b5-ab37-4468-9dc0-24259f1bdbdc",
+                      "sn": "201711031555",
+                      "name": "花王卫生巾乐而雅s系列夜用30厘米15片",
+                      "quantity": 5,
+                      "productSpecificationStr": "",
+                      "price": 24.1,
+                      "profitPrice": 2.8,
+                      "priceTotal": 120.5,
+                      "profitPriceTotal": 14,
+                      "marketPrice": 32.28,
+                      "thumbnail": "http://www.yjiayun.com/upload/image/f64865a8-ac1b-4eaa-86fc-ecfd2f79941a/201711/product/8c7cb600-57f0-4d0b-b262-ca2fd09348c5-thumbnail.jpg",
+                      "isAfterSalesable": true
+                  }]
+              }],
+              "orderItemDtoList": [{
+                  "id": "d9dbe14a-d9b0-44c1-8451-a92aa37ee0a4",
+                  "name": "花王卫生巾乐而雅s系列夜用30厘米15片",
+                  "price": 24.1,
+                  "profitPrice": 2.8,
+                  "priceTotal": 96.4,
+                  "profitPriceTotal": 11.2,
+                  "thumbnail": "http://www.yjiayun.com/upload/image/f64865a8-ac1b-4eaa-86fc-ecfd2f79941a/201711/product/8c7cb600-57f0-4d0b-b262-ca2fd09348c5-thumbnail.jpg",
+                  "quantity": 4,
+                  "productSpecificationStr": ""
+              }],
+              "hasConfirmReceipt": null
+          },
+          {
+              "status": "待发货",
+              "isExpired": null,
+              "expireDate": null,
+              "isReviewed": true,
+              "isConfirmReceipt": false,
+              "shippingDtoList": null,
+              "orderItemDtoList": [{
+                  "id": "6f7a9c35-b915-4ba1-8b80-5fa405224b43",
+                  "name": "尚都比拉女装2013夏装新款蕾丝连衣裙",
+                  "price": 290,
+                  "profitPrice": 8,
+                  "priceTotal": 2610,
+                  "profitPriceTotal": 72,
+                  "thumbnail": "http://test.yjiayun.com/resources/demo-image/201301/0ff130db-0a1b-4b8d-a918-ed9016317009-thumbnail.jpg",
+                  "quantity": 9,
+                  "productSpecificationStr": "白色;M"
+              }],
+              "hasConfirmReceipt": null
+          }
+      ]
+  }
+}

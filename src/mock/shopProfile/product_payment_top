@@ -1,0 +1,42 @@
+{
+   "code": "0",
+   "msg": "success",
+   "data": [
+      {
+         "sn": "201801203056",
+         "productName": "2017冬加绒嘻哈短裤HipHop假两件宽松加大码男哈伦厚七分裤打底裤[黑色]",
+         "quantity": "1",
+         "price": 222
+      },
+      {
+         "sn": "201801203063",
+         "productName": "TEENLADY独家定制香港欧洲站链条包蛇纹鳄鱼纹迷你女包小方包斜跨",
+         "quantity": "1",
+         "price": 399
+      },
+      {
+         "sn": "201802114300",
+         "productName": "喵喵牌",
+         "quantity": "1",
+         "price": 130
+      },
+      {
+         "sn": "201802114305",
+         "productName": "AONIKA简约从心[32mm]",
+         "quantity": "1",
+         "price": 1350
+      },
+      {
+         "sn": "201802124343",
+         "productName": "测试商品（购买无效）",
+         "quantity": "2",
+         "price": 0.03
+      },
+      {
+         "sn": "201804164444",
+         "productName": "MERCY 独家定制V领微喇叭袖拼接黑色长袖丝绒连衣裙A字裙礼服女[米黄色]",
+         "quantity": "1",
+         "price": 0.01
+      }
+   ]
+}

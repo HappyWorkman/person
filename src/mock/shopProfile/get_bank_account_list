@@ -1,0 +1,26 @@
+{
+  "code": "0",
+  "data": {
+    "data":[
+      {
+        "id":"72ace87e-8726-4593-a002-26f1d63e22e1",
+        "bankCode":"CODE_1003",
+        "name":"张三",
+        "account":"8888 8888 8888 8888",
+        "isDefault":false
+      },{
+        "id":"72ace87e-8726-4773-a002-26f1d63e22e1",
+        "bankCode":"CODE_1005",
+        "name":"李四",
+        "account":"1888 8888 8888 8888",
+        "isDefault":false
+      },{
+        "id":"72ace87e-8726-4193-a002-26f1d63e22e1",
+        "bankCode":"CODE_1026",
+        "name":"王五",
+        "account":"2888 8888 8888 8888",
+        "isDefault":true
+      }
+    ]
+  }
+}

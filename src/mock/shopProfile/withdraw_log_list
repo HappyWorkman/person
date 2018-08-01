@@ -1,0 +1,25 @@
+{
+  "code": "0",
+  "msg": "success",
+  "data": {
+    "firstQueryDate": null,
+    "hasMore": false,
+    "totalPages": 1,
+    "total": 1,
+    "data": [
+      {
+        "id": null,
+        "account": "test123123123",
+        "withdrawUserName": "Frank",
+        "withdrawCash": "￥0.10",
+        "actualWithdrawAmount": "￥0.10",
+        "withdrawFee": "￥0.10",
+        "withdrawFeeRate": "10%",
+        "status": "失败",
+        "withdrawCashDate": "2017-11-14 16:44:36",
+        "bankName": null,
+        "sn":"basdfadaf3134"
+      }
+    ]
+  }
+}

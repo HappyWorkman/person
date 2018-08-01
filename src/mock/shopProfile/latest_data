@@ -1,0 +1,42 @@
+{
+  "code": "0",
+  "msg": "success",
+  "data": [
+    {
+      "visitorVolume": 12,
+      "visitorVolumePercentage": "50.00",
+      "soldGoods": 22,
+      "soldGoodsPercentage": "-10.00",
+      "orderNumber": 12,
+      "orderNumberPercentage": "10.00",
+      "transactionAmount": 43,
+      "transactionAmountPercentage": "-100.00",
+      "income": 44,
+      "incomePercentage": "-100.00"
+    },
+    {
+      "visitorVolume": 133,
+      "visitorVolumePercentage": "23",
+      "soldGoods": 422,
+      "soldGoodsPercentage": "23",
+      "orderNumber": 232,
+      "orderNumberPercentage": "-23",
+      "transactionAmount": 5400,
+      "transactionAmountPercentage": "53",
+      "income": 500,
+      "incomePercentage": "-28"
+    },
+    {
+      "visitorVolume": 1422,
+      "visitorVolumePercentage": "-23",
+      "soldGoods": 3223,
+      "soldGoodsPercentage": "33",
+      "orderNumber": 4332,
+      "orderNumberPercentage": "13",
+      "transactionAmount": 5400,
+      "transactionAmountPercentage": "24",
+      "income": 500,
+      "incomePercentage": "-2"
+    }
+  ]
+}
